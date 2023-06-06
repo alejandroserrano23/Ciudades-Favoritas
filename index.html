@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mis ciudades favoritas</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h1>Mis ciudades favortias</h1>
+
+    <div class="container">
+        <div id="ciudades">
+          <div class="ciudad">
+            <img src="brujas.jpg" alt="Brujas">
+            <h3>Brujas</h3>
+            <button class="votar-btn" onclick="votar('Brujas')">Votar</button>
+          </div>
+          <div class="ciudad">
+            <img src="lisboa.jpg" alt="Lisboa">
+            <h3>Lisboa</h3>
+            <button class="votar-btn" onclick="votar('Lisboa')">Votar</button>
+          </div>
+          <div class="ciudad">
+            <img src="londres.jpg" alt="Londres">
+            <h3>Londres</h3>
+            <button class="votar-btn" onclick="votar('Londres')">Votar</button>
+          </div>
+          <div class="ciudad">
+            <img src="paris.jpg" alt="París">
+            <h3>París</h3>
+            <button class="votar-btn" onclick="votar('París')">Votar</button>
+          </div>
+          <div class="ciudad">
+            <img src="sevilla.jpg" alt="Sevilla">
+            <h3>Sevilla</h3>
+            <button class="votar-btn" onclick="votar('Sevilla')">Votar</button>
+          </div>
+          <div class="ciudad">
+            <img src="venecia.jpg" alt="Venecia">
+            <h3>Venecia</h3>
+            <button class="votar-btn" onclick="votar('Venecia')">Votar</button>
+          </div>
+        </div>
+      
+        <div id="seleccionadas">
+          <h2>Ciudades seleccionadas:</h2>
+          <div id="numeros-ciudades" class="numeros-ciudades"></div>
+          <ul id="ciudades-seleccionadas"></ul>
+          <div id="no-favoritas" class="no-favoritas">No hay ciudades favoritas todavía.</div>
+          <button id="vaciar-btn" onclick="vaciarLista()">Vaciar lista</button>
+        </div>
+      </div>      
+          
+          <button id="vaciar-btn" onclick="vaciarLista()">Vaciar lista</button>
+
+  <script src="script.js"></script>
+</body>
+</html>

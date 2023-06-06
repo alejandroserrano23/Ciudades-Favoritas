@@ -1,0 +1,74 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+#ciudades {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-right: 20px;
+}
+
+.ciudad {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+  width: calc(33.33% - 20px);
+  border-radius: 10px;
+  padding: 10px;
+  background-color: #f2f2f2;
+}
+.ciudad img {
+  max-width: 150px;
+  height: auto;
+  max-height: 120px;
+  border-radius: 10px;
+}
+
+.votar-btn {
+  margin-top: 10px;
+}
+
+#seleccionadas {
+  flex-grow: 1;
+}
+
+#seleccionadas h2 {
+  margin-top: 0;
+}
+
+#seleccionadas ul {
+  list-style: none;
+  padding: 0;
+}
+
+#seleccionadas .numeros-ciudades {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+#seleccionadas .numeros-ciudades span {
+  font-weight: normal;
+}
+
+#vaciar-btn {
+  display: none;
+  margin-top: 10px;
+}
+
+#seleccionadas.ciudades-seleccionadas #vaciar-btn {
+  display: block;
+}
